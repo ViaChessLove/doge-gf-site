@@ -1,3 +1,4 @@
+import { ButtonInterface } from "../components/How to buy/HowToBuy";
 import { StepCardProps } from "../components/How to buy/StepCard";
 
 export const howToBuyData: StepCardProps[] = [
@@ -25,5 +26,18 @@ export const howToBuyData: StepCardProps[] = [
         id: '*',
         title: 'Recommendation',
         text: 'In order for your transaction to happen quickly and succesfully we recommend you to pay at least the average gas price and set an appropriate slippage tolerance depending on the volatility at the moment of your transaction. Gas prices can be checked on Etherscan.'
+    }
+]
+
+export const howToBuyLinks: ButtonInterface[] = [
+    {
+        id: 'uniswap',
+        place: 'uniswap',
+        href: 'https://app.uniswap.org/#/swap?outputCurrency=0xfb130d93e49dca13264344966a611dc79a456bc5&chain=mainnet'
+    },
+    {
+        id: 'sushiswap',
+        place: 'sushiswap',
+        href: 'https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0xfb130d93E49DcA13264344966A611dc79a456Bc5'
     }
 ]

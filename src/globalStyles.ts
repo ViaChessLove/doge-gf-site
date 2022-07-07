@@ -47,11 +47,16 @@ export const Button = styled.a<{secondStyle?: boolean}>`
     text-decoration: none;
     border-radius: 8px;
     font-size: 20px;
-    padding-top: 18px;
-    padding-bottom: 18px;
     font-weight: 600 !important;
-    padding: 11px 8px;
+    padding: 18px 8px;
+    text-align: center;
     color: ${props => props.secondStyle? '': '#fff'};
     background-color: ${props => props.secondStyle? '': '#01213a'};
     border-color: ${props => props.secondStyle? '': '#01213a'};
+    &:hover {
+        transition: 1s;
+        cursor: pointer;
+        background-color: ${props => props.secondStyle? '':'#011c31'};
+
+    }
 `

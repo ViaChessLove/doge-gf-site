@@ -7,6 +7,7 @@ import Faq from './components/Faq/Faq';
 import Vaults from './components/Vaults/Vaults';
 import About from './components/About/About';
 import HowToBuy from './components/How to buy/HowToBuy';
+import Roadmap from './components/Roadmap/Roadmap';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Start/>
       <About/>
       <HowToBuy/>
+      <Roadmap/>
       <Vaults/>
       <Faq/>
       <Footer/>

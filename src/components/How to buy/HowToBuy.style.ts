@@ -72,5 +72,5 @@ export const MobilePhone = styled.img`
 export const RightBarButtons = styled.div`
     margin-top: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 `;
