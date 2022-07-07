@@ -36,3 +36,8 @@ export const StartBlockTitle = styled(BlockTitle)`
   max-width: 690px;
   ${BlockTitle}
 `
+export const StartBlockSubTitle = styled(BlockTitle)`
+  margin-top: 30px;
+  color: #404046;
+  ${BlockTitle}
+`;

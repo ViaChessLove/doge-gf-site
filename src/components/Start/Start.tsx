@@ -1,6 +1,6 @@
 import React from 'react'
-import { Block, BlockTitle, Container } from '../../globalStyles'
-import { StartBackground, StartBlockTitle, StartContainer, StartSection } from './Start.style'
+import { Block } from '../../globalStyles'
+import { StartBackground, StartBlockSubTitle, StartBlockTitle, StartContainer, StartSection } from './Start.style'
 
 const Start = () => {
   return (
@@ -9,7 +9,7 @@ const Start = () => {
       <StartContainer>
         <Block>DOGEGF IN A NUTSHELL</Block>
         <StartBlockTitle>A token for kind gestures based on reciprocity</StartBlockTitle>
-        <BlockTitle>The future is kind</BlockTitle>
+        <StartBlockSubTitle>The future is kind</StartBlockSubTitle>
       </StartContainer>
     </StartSection>
   )
