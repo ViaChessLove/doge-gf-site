@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, StyledComponent } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 
-export const Container = styled.section`
+export const Container = styled.div`
     width: 100%;
     max-width: 1250px;
     margin-right: auto;

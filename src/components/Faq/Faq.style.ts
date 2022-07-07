@@ -7,6 +7,7 @@ export const FaqContainer = styled(Container)`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 30px;
     ${Container};
 `
 export const PlusMinus = styled.div`

@@ -6,6 +6,7 @@ import Start from './components/Start/Start';
 import Faq from './components/Faq/Faq';
 import Vaults from './components/Vaults/Vaults';
 import About from './components/About/About';
+import HowToBuy from './components/How to buy/HowToBuy';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Navbar />
       <Start/>
       <About/>
+      <HowToBuy/>
       <Vaults/>
       <Faq/>
       <Footer/>

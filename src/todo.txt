@@ -4,7 +4,7 @@
 [] responsiveness for that part
 *** 06.07.2022 ***
 [] Vaults 
-[+-] Start
+[x] Start
 [] Community art
 [] Read more
 [] responsiveness
