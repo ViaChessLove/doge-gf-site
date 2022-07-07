@@ -1,0 +1,19 @@
+*** 05.07.2022 *** 
+[x] Footer
+[x] Faq
+[] responsiveness for that part
+*** 06.07.2022 ***
+[] Vaults 
+[+-] Start
+[] Community art
+[] Read more
+[] responsiveness
+*** 07.07.2022 *** 
+[] ancors 
+[] Tokenomics
+[] Roadmap
+*** 08.07.2022 *** 
+[] responsiveness for upper part
+[] Tutorial
+[] responsiveness
+[] ancors 
