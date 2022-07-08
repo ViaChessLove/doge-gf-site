@@ -8,6 +8,7 @@ import Vaults from './components/Vaults/Vaults';
 import About from './components/About/About';
 import HowToBuy from './components/How to buy/HowToBuy';
 import Roadmap from './components/Roadmap/Roadmap';
+import Tokenomics from './components/Tokenomics/Tokenomics';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <About/>
       <HowToBuy/>
       <Roadmap/>
+      <Tokenomics/>
       <Vaults/>
       <Faq/>
       <Footer/>
