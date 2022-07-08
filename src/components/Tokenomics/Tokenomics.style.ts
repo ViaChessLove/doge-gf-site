@@ -22,10 +22,11 @@ export const TokenomicsList = styled.ul`
     flex-wrap: wrap;
     list-style-type: none;
     margin-top: 35px;
+    padding-bottom: 70px;
 `;
 
 
-export const TokenomicsCard = styled.li`
+export const TokenomicsCard = styled.li<{height?: string}>`
     height: 270px;
     width: 250px;
     box-shadow: 0 25px 70px rgba(1,33,58,.07);

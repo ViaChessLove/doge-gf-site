@@ -2,6 +2,7 @@ import React from 'react'
 import { IconType } from 'react-icons';
 import { AiOutlineContainer, AiOutlineDollar, AiOutlineFire, AiOutlineLock, AiOutlineWallet } from 'react-icons/ai';
 import { RiAdvertisementLine } from 'react-icons/ri';
+import {VscWorkspaceTrusted} from 'react-icons/vsc'
 import { TokenomicsCard, TokenomicsCardBlockContent, TokenomicsCardBlockTitle, TokenomicsCardContent, TokenomicsIconContainer } from './Tokenomics.style'
 
 export interface TokenomicsSingleProps{
@@ -10,6 +11,7 @@ export interface TokenomicsSingleProps{
     color: string;
     title: string;
     content: string;
+    link?: string;
 }
 
 const icons: IconType[] = [
@@ -18,10 +20,11 @@ const icons: IconType[] = [
     AiOutlineContainer,
     RiAdvertisementLine,
     AiOutlineFire,
-    AiOutlineWallet
+    AiOutlineWallet,
+    VscWorkspaceTrusted
 ]
 
-const TokenomicsSingle:React.FC<TokenomicsSingleProps> = ({backgroundColor, color, id, title, content}) => {
+const TokenomicsSingle:React.FC<TokenomicsSingleProps> = ({backgroundColor, color, id, title, content, link}) => {
   const Icon: IconType = icons[id];
   return (
     <TokenomicsCard>
@@ -31,6 +34,7 @@ const TokenomicsSingle:React.FC<TokenomicsSingleProps> = ({backgroundColor, colo
         </TokenomicsIconContainer>
         <TokenomicsCardBlockTitle>{title}</TokenomicsCardBlockTitle>
         <TokenomicsCardBlockContent>{content}</TokenomicsCardBlockContent>
+        
       </TokenomicsCardContent>
     </TokenomicsCard>
   )
