@@ -3,10 +3,11 @@ import { Block, BlockTitle, Container } from "../../globalStyles";
 
 export const TokenomicsContainer = styled(Container)`
     height: 150vh;
-    max-width: 900px !important;
+    max-width: 832px !important;
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
     margin-bottom: 25px;
     ${Container}
 `;
@@ -31,13 +32,13 @@ export const TokenomicsCard = styled.li`
     border-radius: 16px;
     margin-right: 31px;
     margin-bottom: 40px;
-    &:last-child {
+    &:nth-child(3n) {
         margin-right: 0px;
     }
 `;
 
 export const TokenomicsCardContent = styled.div`
-    padding: 30px 30px;
+    padding: 30px 25px;
     width: 201px;
     height: 161px;
 `
@@ -57,7 +58,8 @@ export const TokenomicsCardBlockTitle = styled(BlockTitle)`
     font-size: 18px;
     margin-bottom: 13px;
     line-height: 21px;
-    width: 201px;
+    text-align: flex-start !important;
+    width: 205px;
 `;
 
 export const TokenomicsCardBlockContent = styled(BlockTitle)`
