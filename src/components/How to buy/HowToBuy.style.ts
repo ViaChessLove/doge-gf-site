@@ -8,7 +8,7 @@ const howToBuyStepMargin: number = 25;
 export const HowToBuyContainer = styled(Container)`
     max-width: 970px;
     height: 140vh;
-    margin-bottom: clamp(30px, 45px, 60px);
+    margin-bottom: clamp(45px, 60px, 85px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
