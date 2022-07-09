@@ -11,6 +11,7 @@ export interface TokenomicsSingleProps{
     color: string;
     title: string;
     content: string;
+    trust?: boolean;
     link?: string;
 }
 
@@ -24,10 +25,10 @@ const icons: IconType[] = [
     VscWorkspaceTrusted
 ]
 
-const TokenomicsSingle:React.FC<TokenomicsSingleProps> = ({backgroundColor, color, id, title, content, link}) => {
+const TokenomicsSingle:React.FC<TokenomicsSingleProps> = ({backgroundColor, color, id, title, content, link, trust}) => {
   const Icon: IconType = icons[id];
   return (
-    <TokenomicsCard>
+    <TokenomicsCard height={trust}>
       <TokenomicsCardContent>
         <TokenomicsIconContainer backgroundColor={backgroundColor} color={color}>
           <Icon style={{fontSize:'30px'}}/>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Block, BlockTitle, Container } from "../../globalStyles";
+import TokenomicsSingle from "./TokenomicsSingle";
 
 export const TokenomicsContainer = styled(Container)`
     height: 150vh;
@@ -26,8 +27,8 @@ export const TokenomicsList = styled.ul`
 `;
 
 
-export const TokenomicsCard = styled.li<{height?: string}>`
-    height: 270px;
+export const TokenomicsCard = styled.li<{height?: boolean}>`
+    height: ${props => props.height? 300:270}px;
     width: 250px;
     box-shadow: 0 25px 70px rgba(1,33,58,.07);
     border-radius: 16px;
@@ -38,10 +39,11 @@ export const TokenomicsCard = styled.li<{height?: string}>`
     }
 `;
 
-export const TokenomicsCardContent = styled.div`
+export const TokenomicsCardContent = styled.div<{width?: boolean}>`
     padding: 30px 25px;
     width: 201px;
     height: 161px;
+    
 `
 
 export const TokenomicsIconContainer = styled.div<{color: string; backgroundColor: string}>`
@@ -69,6 +71,3 @@ export const TokenomicsCardBlockContent = styled(BlockTitle)`
     color: #404046;
     ${BlockTitle}
 `;
-
-
-

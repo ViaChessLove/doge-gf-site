@@ -6,7 +6,7 @@ const Vaults = () => {
   return (
       <VaultsContainer>
           
-          <Block secondStyle={true}>coming soon</Block>
+          <Block secondStyle>coming soon</Block>
       </VaultsContainer>
   )
 }
