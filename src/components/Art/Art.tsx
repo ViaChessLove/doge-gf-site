@@ -1,11 +1,16 @@
 import React from 'react'
-import { Block } from '../../globalStyles';
+import { Block, BlockTitle } from '../../globalStyles';
+import { ArtBlockTitle, ArtContainer, ArtContent } from './Art.style';
 
 const Art = () => {
   return (
-    <div id='art'>
-      <Block>Curated by the Dogegf Team</Block>
-    </div>
+    <ArtContainer id='art'>
+      <ArtContent>
+        <Block>Curated by the Dogegf Team</Block>
+        <ArtBlockTitle>Community art</ArtBlockTitle>
+        
+      </ArtContent>
+    </ArtContainer>
   )
 }
 

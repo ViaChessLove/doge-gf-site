@@ -1,3 +1,4 @@
+import { BsArrowUp, BsArrowUpCircle, BsArrowUpCircleFill } from "react-icons/bs";
 import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
@@ -59,4 +60,21 @@ export const Button = styled.a<{secondStyle?: boolean}>`
         background-color: ${props => props.secondStyle? '':'#011c31'};
 
     }
-`
+`;
+
+export const ArrowUnHovered = styled(BsArrowUpCircle)`
+    position: fixed;
+    bottom: 30px; 
+    right: 30px;
+    font-size: 60px; 
+    z-index: 40;
+`;
+
+export const ArrowHovered = styled(BsArrowUpCircleFill)`
+    position: fixed;
+    bottom: 30px; 
+    right: 30px; 
+    font-size: 60px;
+    z-index: 40;
+    cursor: pointer;
+`;

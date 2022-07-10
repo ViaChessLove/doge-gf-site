@@ -2,9 +2,10 @@ import React from 'react'
 import { Block } from '../../globalStyles'
 import { StartBackground, StartBlockSubTitle, StartBlockTitle, StartContainer, StartSection } from './Start.style'
 
+
 const Start = () => {
   return (
-    <StartSection id='start'>
+    <StartSection>
       <StartBackground src='./assets/start.png'/>
       <StartContainer>
         <Block>DOGEGF IN A NUTSHELL</Block>

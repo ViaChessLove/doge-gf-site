@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { BlockTitle, Container } from "../../globalStyles";
 
 export const StartSection = styled.section`
+  padding-top: 100px;
   position: relative;
   top: 0;
   height: 100vh;
@@ -24,7 +25,6 @@ export const StartBackground = styled.img`
 
 export const StartContainer = styled(Container)`
   max-width: 1150px;
-  padding-top: clamp(80px, 7rem, 7vh);
   ${Container}
 `;
 

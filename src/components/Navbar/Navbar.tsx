@@ -19,7 +19,7 @@ const Navbar = () => {
                 </MobileIcon>
                 <NavMenu show={show}>
                     {menu.map((item, key) => {
-                        return <Link spy={true} smooth={true} offset={50} duration={500} to={item.split(' ').join('').toLowerCase()}><NavItem onClick={handleShow} key={key}>{item}</NavItem></Link>
+                        return <Link spy={true} smooth={true} offset={20} duration={300} to={item.split(' ').join('').toLowerCase()}><NavItem onClick={handleShow} key={key}>{item}</NavItem></Link>
                     })}
                 </NavMenu>
             </NavbarContainer>

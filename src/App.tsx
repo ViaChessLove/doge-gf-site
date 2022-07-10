@@ -13,29 +13,27 @@ import Blog from './components/Blog/Blog';
 import Art from './components/Art/Art';
 import { useInView } from 'react-intersection-observer';
 import { BsArrowUpCircle } from 'react-icons/bs';
+import { Link } from 'react-scroll';
+import Arrow from './components/Arrow/Arrow';
 
 const App = () => {
-  const {ref, inView} = useInView({threshold: 0,});
-  const [show, setShow] = useState<boolean>(true);
+  const {ref, inView} = useInView({threshold: 0.9});
+  const [show, setShow] = useState<boolean>(false);;
   useEffect(() => {
-    switch(inView){
-      case true: {
-        setShow(false);
-        break;
-      }
-      case false: {
-        setShow(true);
-        break;
-      }
+    if (!inView) {
+      setShow(true);
+    } else {
+      setShow(false);
     }
-  }, [inView, ref])
+  }, [inView, ref]);
   return (
     <>
       <GlobalStyle/>
+      <div ref={ref} id='start'></div>
       <Navbar />
-      {show? <BsArrowUpCircle style={{position:'fixed', bottom:'0px', left:'0px', fontSize:'40px', zIndex: '40'}}/>:undefined}
-      <Start/>
-      <About/>
+      {show? <Arrow to='start'/>:undefined}
+      <Start />
+      <About />
       <HowToBuy/>
       <Roadmap/>
       <Tokenomics/>
