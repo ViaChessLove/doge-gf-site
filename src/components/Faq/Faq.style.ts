@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Container } from "../../globalStyles";
 
 export const FaqContainer = styled(Container)`
-    height: 100vh;
+    height: 110%;
     max-width: 1100px;
     display: flex;
     flex-wrap: wrap;

@@ -15,7 +15,7 @@ const Tokenomics = () => {
       </TokenomicsList>
       <Block>trust</Block>
       <TokenomicsList>
-        <TokenomicsSingle trust={true} id={6} backgroundColor='rgba(134,123,242,.2)' color='#0d6efd' title='Audit' content="The DogeGF contract has been audited by Solidity finance."/>
+        <TokenomicsSingle link='https://solidity.finance/audits/DogeGF/' trust={true} id={6} backgroundColor='#0dcaf0' color='rgb(33,37,41)' title='Audit' content="The DogeGF contract has been audited by Solidity finance."/>
       </TokenomicsList>
     </TokenomicsContainer>
   )

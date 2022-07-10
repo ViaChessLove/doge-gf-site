@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { Container } from "../../globalStyles";
 
 export const FooterBar = styled.footer`
+    position: relative;
+    bottom: 0;
     flex: 0 0 auto;
     margin-left: 10px;
     margin-right: 10px;

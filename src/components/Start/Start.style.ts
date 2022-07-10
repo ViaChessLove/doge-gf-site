@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { BlockTitle, Container } from "../../globalStyles";
 
 export const StartSection = styled.section`
+  position: relative;
+  top: 0;
   height: 100vh;
   background-position: center;
   background-size: cover;

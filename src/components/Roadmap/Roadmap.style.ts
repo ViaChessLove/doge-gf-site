@@ -3,8 +3,8 @@ import { BlockTitle, Container } from "../../globalStyles";
 
 export const RoadmapContainer = styled(Container)`
     max-width: 1740px;
-    height: 120vh;
-    margin-bottom: 25px;
+    height: 120%;
+    margin-bottom: 200px;
     display: flex;
     flex-flow: column;
     align-items: center;

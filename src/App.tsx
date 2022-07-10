@@ -9,6 +9,8 @@ import About from './components/About/About';
 import HowToBuy from './components/How to buy/HowToBuy';
 import Roadmap from './components/Roadmap/Roadmap';
 import Tokenomics from './components/Tokenomics/Tokenomics';
+import Blog from './components/Blog/Blog';
+import Art from './components/Art/Art';
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
       <HowToBuy/>
       <Roadmap/>
       <Tokenomics/>
+      <Blog/>
+      <Art/>
       <Vaults/>
       <Faq/>
       <Footer/>

@@ -1,15 +1,15 @@
 import styled from "styled-components";
-import { Block, BlockTitle, Container } from "../../globalStyles";
+import { Block, BlockTitle, Button, Container } from "../../globalStyles";
 import TokenomicsSingle from "./TokenomicsSingle";
 
 export const TokenomicsContainer = styled(Container)`
-    height: 150vh;
+    height: 100%;
     max-width: 832px !important;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     ${Container}
 `;
 
@@ -69,5 +69,13 @@ export const TokenomicsCardBlockContent = styled(BlockTitle)`
     font-size:14px;
     font-weight: 700 !important;
     color: #404046;
+    line-height: 22px;
     ${BlockTitle}
+`;
+
+export const TokenomicsButton = styled(Button)`
+    margin-top: clamp(7px, 10px, 20px);
+    width: 100px;
+    padding: 5px 5px;
+    ${Button}
 `;
