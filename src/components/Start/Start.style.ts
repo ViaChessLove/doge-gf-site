@@ -8,7 +8,6 @@ export const StartSection = styled.section`
   background-position: center;
   background-size: cover;
   margin-top: clamp(80px, 110px, 150px);
-  margin-bottom: clamp(30px, 46px, 60px);
 `
 
 export const StartBackground = styled.img`

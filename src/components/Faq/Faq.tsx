@@ -9,7 +9,7 @@ import { FaqContent } from './../../data/FaqData';
 const Faq = () => {
   const faqList: FaqContent[] = useSelector((state: RootState) => state.faq.values);
   return (
-    <FaqContainer>
+    <FaqContainer id='faq'>
         <div style={{maxWidth:'321px'}}>
             <Block>
                 Knowledge base

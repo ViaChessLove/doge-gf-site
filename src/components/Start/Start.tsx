@@ -4,7 +4,7 @@ import { StartBackground, StartBlockSubTitle, StartBlockTitle, StartContainer, S
 
 const Start = () => {
   return (
-    <StartSection>
+    <StartSection id='start'>
       <StartBackground src='./assets/start.png'/>
       <StartContainer>
         <Block>DOGEGF IN A NUTSHELL</Block>

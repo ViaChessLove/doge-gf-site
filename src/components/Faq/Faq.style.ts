@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Container } from "../../globalStyles";
 
 export const FaqContainer = styled(Container)`
+    padding-top: 180px;
     height: 110%;
     max-width: 1100px;
     display: flex;

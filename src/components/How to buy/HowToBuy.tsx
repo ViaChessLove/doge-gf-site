@@ -14,7 +14,7 @@ export interface ButtonInterface {
 const HowToBuy = () => {
     
     return (
-        <HowToBuyContainer>
+        <HowToBuyContainer id='howtobuy'>
             <div style={{maxWidth:'420px'}}>
                 <Block>tutorial</Block>
                 <HowToBuyBlockTitle>How to buy $DOGEGF</HowToBuyBlockTitle>

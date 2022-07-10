@@ -6,10 +6,10 @@ export const TokenomicsContainer = styled(Container)`
     height: 100%;
     max-width: 832px !important;
     display: flex;
+    padding-top: 170px;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
     ${Container}
 `;
 

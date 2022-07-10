@@ -6,12 +6,12 @@ const howToBuyStepMargin: number = 25;
 
 
 export const HowToBuyContainer = styled(Container)`
+    padding-top: 180px;
     position: relative;
     top: 0;
     left: 0;
     max-width: 970px;
     height: 140%;
-    margin-bottom: clamp(60px, 85px, 100px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;

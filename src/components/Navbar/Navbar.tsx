@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { MobileIcon, Nav, NavbarContainer, NavItem, NavLogo, NavMenu } from './Navbar.style';
 import {FaTimes} from 'react-icons/fa';
 import {CgMenuRight} from 'react-icons/cg'
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [show, setShow] = useState<boolean>(false);
     const handleShow = () => {
         setShow(!show);
     }
-    const menu: string[] = ['About', 'How to buy', 'Roadmap', 'Tokenomics', 'Art', 'DogeGF Vaults', 'Faq'];
+    const menu: string[] = ['About', 'How to buy', 'Roadmap', 'Tokenomics', 'Blog', 'Art', 'DogeGF Vaults', 'Faq'];
     return (
         <Nav>
             <NavbarContainer>
@@ -18,7 +19,7 @@ const Navbar = () => {
                 </MobileIcon>
                 <NavMenu show={show}>
                     {menu.map((item, key) => {
-                        return <NavItem key={key}>{item}</NavItem>
+                        return <Link spy={true} smooth={true} offset={50} duration={500} to={item.split(' ').join('').toLowerCase()}><NavItem onClick={handleShow} key={key}>{item}</NavItem></Link>
                     })}
                 </NavMenu>
             </NavbarContainer>

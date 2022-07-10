@@ -5,7 +5,7 @@ import { aboutData } from './../../data/AboutData';
 
 const About = () => {
     return (
-        <AboutContainer>
+        <AboutContainer id='about'>
             <AboutBlock>Origins</AboutBlock>
             <AboutBlockTitle>{aboutData.title}</AboutBlockTitle>
             <AboutContent>{aboutData.content}</AboutContent>

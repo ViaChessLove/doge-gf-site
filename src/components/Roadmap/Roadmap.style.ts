@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { BlockTitle, Container } from "../../globalStyles";
 
 export const RoadmapContainer = styled(Container)`
+    padding-top: 170px;
     max-width: 1740px;
     height: 120%;
-    margin-bottom: 200px;
     display: flex;
     flex-flow: column;
     align-items: center;

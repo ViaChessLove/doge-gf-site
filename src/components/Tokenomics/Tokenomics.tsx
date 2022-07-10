@@ -7,7 +7,7 @@ import TokenomicsSingle from './TokenomicsSingle'
 
 const Tokenomics = () => {
   return (
-    <TokenomicsContainer>
+    <TokenomicsContainer id='tokenomics'>
       <Block>numbers and stuf</Block>
       <TokenomicsBlockTitle>Tokenomics</TokenomicsBlockTitle>
       <TokenomicsList>

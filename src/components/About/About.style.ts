@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { Block, BlockTitle, Container } from "../../globalStyles";
 
 export const AboutContainer = styled(Container)`
+    padding-top: 170px;
     position: relative;
     top: 0;
     height: 80%;
-    margin-bottom: 180px;
     max-width: 950px;
     display: flex;
     flex-direction: column;
