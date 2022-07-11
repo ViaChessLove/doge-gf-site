@@ -38,7 +38,7 @@ const App = () => {
       <Roadmap/>
       <Tokenomics/>
 
-      {/*<Blog/>*/}
+      <Blog/>
       <Art/>
       <Vaults/>
       <Faq/>
