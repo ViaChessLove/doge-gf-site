@@ -12,9 +12,11 @@ import Tokenomics from './components/Tokenomics/Tokenomics';
 import Blog from './components/Blog/Blog';
 import Art from './components/Art/Art';
 import { useInView } from 'react-intersection-observer';
-import { BsArrowUpCircle } from 'react-icons/bs';
-import { Link } from 'react-scroll';
 import Arrow from './components/Arrow/Arrow';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+
 
 const App = () => {
   const {ref, inView} = useInView({threshold: 0.9});
@@ -37,7 +39,6 @@ const App = () => {
       <HowToBuy/>
       <Roadmap/>
       <Tokenomics/>
-
       <Blog/>
       <Art/>
       <Vaults/>

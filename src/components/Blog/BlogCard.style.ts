@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import { Container } from "../../globalStyles";
 
+export const BlogCardContainer = styled.div`
+    overflow: hidden;
+`;
 
 export const BlogCardImage = styled.img`
     display: block;

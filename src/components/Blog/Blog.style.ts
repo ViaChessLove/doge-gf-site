@@ -3,7 +3,6 @@ import { BlockTitle, Container } from "../../globalStyles";
 
 export const BlogBlock = styled.div`
     position: relative;
-    
 `
 
 export const BlogContainer = styled(Container)`
@@ -14,6 +13,8 @@ export const BlogContainer = styled(Container)`
     align-items: center;
     border-radius: 30px;
     background-color: #f5f7fe;
+    padding-left: 30px;
+    padding-right: 40px;
     ${Container}
 `;
 
@@ -28,7 +29,10 @@ export const BlogContent = styled.div`
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin-bottom: 65px;
+    margin-bottom: 45px;
+`
+
+export const SliderContainer = styled(Container)`
 `
 
 export const BlogBlockTitle = styled(BlockTitle)`
