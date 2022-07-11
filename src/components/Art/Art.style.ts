@@ -32,4 +32,7 @@ export const ArtImg = styled.img`
     width: 302px; 
     height: 311px;
     border-radius: 8px;
+    &:hover{
+        cursor: pointer;
+    }
 `;

@@ -3,6 +3,8 @@ import { Block, BlockTitle } from '../../globalStyles'
 import { BlogBlock, BlogBlockTitle, BlogContainer, BlogContainerDecoration, BlogContent } from './Blog.style'
 import Carousel from '../Carousel/Carousel'
 import { blogData } from '../../data/BlogData'
+import { BlogCardDate, BlogCardImage, BlogCardTitle } from './BlogCard.style'
+import BlogCard from './BlogCard'
 
 const Blog = () => {
   return (
@@ -14,7 +16,7 @@ const Blog = () => {
           <BlogBlockTitle>Read more</BlogBlockTitle>
         </BlogContent>
         <div>
-          {blogData[0].id}
+          <BlogCard id={blogData[0].id} image={blogData[0].image} date={blogData[0].date} title={blogData[0].title}/> 
         </div>
       </BlogContainer>
     </BlogBlock>
