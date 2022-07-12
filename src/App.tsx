@@ -35,15 +35,15 @@ const App = () => {
       <Navbar />
       {show? <Arrow to='start'/>:undefined}
       <Start />
-      {/*<About />
+      <About />
       <HowToBuy/>
       <Roadmap/>
       <Tokenomics/>
       <Blog/>
       <Art/>
-      //<Vaults/>
+      {/*<Vaults/>*/}
       <Faq/>
-      <Footer/>*/}
+      <Footer/>
     </>
   );
 }

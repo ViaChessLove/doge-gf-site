@@ -31,6 +31,12 @@ export const Block = styled.label<{secondStyle?: boolean}>`
     font-size: 11px;
     font-family: Lato;
     font-weight: 600;
+    @media screen and (max-width: 1024px){
+        padding: 6px 20px;
+    }
+    @media screen and (max-width: 500px){
+        font-size: 10px;
+    }
 `;
 
 export const BlockTitle = styled.h2<{secondStyle?: boolean}>`
