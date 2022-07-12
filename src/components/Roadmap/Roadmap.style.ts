@@ -4,11 +4,15 @@ import { BlockTitle, Container } from "../../globalStyles";
 export const RoadmapContainer = styled(Container)`
     padding-top: 170px;
     max-width: 1740px;
-    height: 120%;
+    height: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
     ${Container};
+    @media screen and (max-width: 1442px){
+        max-width: 1110px;
+    }
 `
 export const RoadmapBlockTitle = styled(BlockTitle)`
     margin-top: 40px;
@@ -42,6 +46,14 @@ export const RoadmapCard = styled.li`
     margin-bottom: 30px;
     &:last-child{
         margin-right: 0px;
+    }
+    
+    @media screen and (max-width: 1442px){
+        &:nth-child(3){
+            margin-right: 0px;
+        }
+        &:last-child{
+        }
     }
 `;
 

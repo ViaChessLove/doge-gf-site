@@ -24,8 +24,12 @@ export const ArtList = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
     gap: 20px 0px;
+    
+	@media screen and (max-width: 1250px){
+        justify-content: center;
+        gap: 20px 20px;
+	}
 `
 export const ArtImg = styled.img`
     object-fit: cover;

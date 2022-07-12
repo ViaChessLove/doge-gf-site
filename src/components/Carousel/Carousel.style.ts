@@ -35,6 +35,13 @@ export const StyledLeftArrow = styled(BsFillArrowLeftCircleFill)`
 		cursor: pointer;
 		opacity: 0.8;
 	}
+	@media screen and (max-width: 1480px){
+		left: 5px;
+		font-size: 45px;
+	}
+	@media screen and (max-width: 1260px){
+		top: 64.8%;
+	}
 `
 export const StyledRightArrow = styled(BsFillArrowRightCircleFill)`
 	z-index: 49;
@@ -46,5 +53,12 @@ export const StyledRightArrow = styled(BsFillArrowRightCircleFill)`
 	&:hover{
 		cursor: pointer;
 		opacity: 0.8;
+	}
+	@media screen and (max-width: 1480px){
+		right: 5px;
+		font-size: 45px;
+	}
+	@media screen and (max-width: 1260px){
+		top: 63%;
 	}
 `

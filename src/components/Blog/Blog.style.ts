@@ -3,6 +3,10 @@ import { BlockTitle, Container } from "../../globalStyles";
 
 export const BlogBlock = styled.div`
     position: relative;
+    @media screen and (max-width: 1420px){
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 `
 
 export const BlogContainer = styled(Container)`
@@ -16,12 +20,18 @@ export const BlogContainer = styled(Container)`
     padding-left: 30px;
     padding-right: 40px;
     ${Container}
+    @media screen and (max-width: 1420px){
+        margin-right: 10px;
+    }
 `;
 
 export const BlogContainerDecoration = styled.img`
     position: relative;
     top: 170px;
     left: clamp(80px,105px, 130px);
+    @media screen and (max-width: 1300px) {
+        left: 10px;
+    }
 `;
 
 export const BlogContent = styled.div`

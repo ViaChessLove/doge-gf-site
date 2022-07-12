@@ -11,6 +11,11 @@ export const BlogCardImage = styled.img`
     padding-bottom: 15px;
     width: 384px;
     height: 259px;
+    @media screen and (max-width: 1350px){
+        width: 350px;
+        height: 250px;
+        border-radius: 100px;
+    }
 `
 
 export const BlogCardDate = styled.h5`

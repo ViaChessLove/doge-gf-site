@@ -5,8 +5,10 @@ import { BlockTitle, Container } from "../../globalStyles";
 export const VaultsContainer = styled(Container)`
     position: relative;
     top: 0;
+    bottom: 0;
+    margin: 0 auto;
     height: 100%;
-    max-width: 1500px !important;
+    max-width: 1500px;
     display: flex;
     flex-flow: column;
     align-items: center;
