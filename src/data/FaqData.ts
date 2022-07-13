@@ -36,8 +36,8 @@ export const faqs: FaqContent[] = [
     },
     {
         id: 5,
-        question: "What is the contract address?",
-        answer: "The contract address is 0xfb130d93e49dca13264344966a611dc79a456bc5",
+        question: "Where can i read the docs",
+        answer: "In GitBook",
         margin: true,
         isShow: false
     },

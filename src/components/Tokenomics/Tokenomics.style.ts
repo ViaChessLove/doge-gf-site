@@ -11,16 +11,28 @@ export const TokenomicsContainer = styled(Container)`
     align-items: center;
     justify-content: center;
     ${Container}
+    @media screen and (max-width: 835px){
+        max-width: 700px;
+    }
+    @media screen and (max-width: 550px){
+        padding-left: 20px;
+        padding-right: 20px; 
+        max-width: 300px;
+    }
+    
 `;
 
 export const TokenomicsBlockTitle = styled(BlockTitle)`
     font-weight: 700 !important;
+    text-align: center;
     margin-top: 35px;
+    ${BlockTitle}
 `;
 
 export const TokenomicsList = styled.ul`
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
     margin-top: 35px;
     padding-bottom: 70px;
@@ -36,6 +48,19 @@ export const TokenomicsCard = styled.li<{height?: boolean}>`
     margin-bottom: 40px;
     &:nth-child(3n) {
         margin-right: 0px;
+    }
+    @media screen and (max-width: 835px){
+        &:nth-child(3n){
+            margin-right: 31px;
+        };
+        &:nth-child(2n){
+            margin-right: 0px;
+        }
+    }
+    @media screen and (max-width: 550px){
+        &:nth-child(n){
+            margin-right: 0px;
+        }
     }
 `;
 

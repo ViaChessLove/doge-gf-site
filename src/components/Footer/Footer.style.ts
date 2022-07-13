@@ -14,18 +14,20 @@ export const FooterBar = styled.footer`
     max-height: 1300px;
     background-color:#f5f7fe;
     border-radius: 30px;
-    height: 130px;
+    height: 100%;
 `
 
 export const FooterContainer = styled(Container)`
+    padding-left: 40px;
+    padding-right: 40px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    ${Container}
-    @media screen and(max-width:990px){
-        display: flex;
-        order: 1;
-        flex-flow: column-reverse;
+    flex-direction: row wrap;
+    justify-content: center;
+    gap: 10px 20px;
+    ${Container};
+    @media screen and (max-width: 990px){
+        flex-direction: column;
+        align-items: center;
     }
 `;
 
@@ -35,6 +37,11 @@ export const FooterContent = styled.div<{color?: string}>`
     padding-right: 10px;
     font-size: 14px;
     font-weight: 600;
+    padding-bottom: 51px;
+    @media screen and (max-width: 990px){
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 `;
 
 export const FooterIcons = styled.div`

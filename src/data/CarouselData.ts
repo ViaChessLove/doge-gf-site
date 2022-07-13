@@ -1,5 +1,3 @@
-
-
 export const sliderSettings = {
     arrows: false,
     dots: true,

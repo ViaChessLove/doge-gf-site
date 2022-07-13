@@ -11,7 +11,8 @@ export const BlogBlock = styled.div`
 
 export const BlogContainer = styled(Container)`
     max-width: 1410px !important;
-    height: 120vh;
+    height: 100%;
+    padding-bottom: 50px;
     display: flex;
     flex-flow: column;
     align-items: center;

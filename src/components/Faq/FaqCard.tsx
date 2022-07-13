@@ -25,7 +25,7 @@ const FaqCard: React.FC<FaqCardProps> = ({id, question, answer, margin, isShow})
     }
   }
 
-  const initial = {opacity: 0, y: -10, x: -40};
+  const initial = {opacity: 0, y: 40,};
 
   const animation = useAnimation();
 
@@ -34,10 +34,12 @@ const FaqCard: React.FC<FaqCardProps> = ({id, question, answer, margin, isShow})
         animation.start({
             opacity: 1,
             y:0,
-            x: 0
         })
     } else {
-        animation.start(initial)
+        animation.start({
+          opacity: 1,
+          y: -40,
+        })
     }
   }, [isShow])
 

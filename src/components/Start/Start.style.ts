@@ -12,11 +12,6 @@ export const StartSection = styled.section`
   
   @media screen and (max-width: 1024px){
     padding-top: 40px;
-    height: 80vh;
-  }
-
-  @media screen and (max-width: 768px){
-    height: 70vh;
   }
   
   @media screen and (max-width: 500px){

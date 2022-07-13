@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { IconType } from 'react-icons';
 import { FaEthereum, FaGithub, FaTiktok } from 'react-icons/fa';
 import {FiTwitter} from 'react-icons/fi';
@@ -21,11 +21,20 @@ const Footer = () => {
     RiCoinLine,
     FaGithub,
   ];
+  const [order, setOrder] = useState<string>('2');
+  useEffect(() => {
+    window.addEventListener('load', () => {
+      window.innerWidth > 500  ? setOrder('2'): setOrder('3')
+    });
+    window.addEventListener('resize', () => {
+      window.innerWidth > 500  ? setOrder('2'): setOrder('3')
+    });
+  },[order])
   return (
     <FooterBar >
       <FooterContainer>
         <FooterContent>Contact us: dogegf@dogegf.com</FooterContent>
-        <FooterContent>All Rights Reserved © DogeGF</FooterContent>
+        <FooterContent style={{order:order}}>All Rights Reserved © DogeGF</FooterContent>
         <FooterContent color='black'>
           <FooterIcons>
               {icons.map((icon) => {

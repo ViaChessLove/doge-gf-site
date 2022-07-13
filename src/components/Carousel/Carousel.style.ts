@@ -28,7 +28,7 @@ export const StyledLeftArrow = styled(BsFillArrowLeftCircleFill)`
 	z-index: 49;
 	font-size: 50px;
 	position: absolute;
-	top: 57%;
+	top: 65%;
 	left: 3.5%;
 	color: #1a3454;
 	&:hover{
@@ -47,7 +47,7 @@ export const StyledRightArrow = styled(BsFillArrowRightCircleFill)`
 	z-index: 49;
 	font-size: 50px;
 	position: absolute;
-	top: 57%;
+	top: 65%;
 	right: 3.5%;
 	color: #1a3454;
 	&:hover{
