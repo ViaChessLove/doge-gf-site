@@ -39,7 +39,7 @@ const App = () => {
       <HowToBuy/>
       <Roadmap/>
       <Tokenomics/>
-      {/*<Blog/>*/}
+      <Blog/>
       <Art/>
       <Faq/>
       <Footer/>

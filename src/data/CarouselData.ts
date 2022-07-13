@@ -16,12 +16,11 @@ export const sliderSettings = {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2,
-          dots: true
+          speed: 1000,
         }
       },
       {

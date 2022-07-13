@@ -1,12 +1,9 @@
-import React, { useState } from 'react'
-import Slider from 'react-slick'
+import React from 'react'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import { CarouselContent, CarouselSlider } from './Carousel.style';
+import { CarouselSlider } from './Carousel.style';
 import { blogData } from '../../data/BlogData';
 import BlogCard from '../Blog/BlogCard';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
-
 interface CarouselProps {
   sliderSettings: any,
   sliderRef?: any

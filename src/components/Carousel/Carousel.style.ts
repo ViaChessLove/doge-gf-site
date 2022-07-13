@@ -59,6 +59,6 @@ export const StyledRightArrow = styled(BsFillArrowRightCircleFill)`
 		font-size: 45px;
 	}
 	@media screen and (max-width: 1260px){
-		top: 63%;
+		top: 64.8%;
 	}
 `

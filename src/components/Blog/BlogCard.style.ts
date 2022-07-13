@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const BlogCardContainer = styled.div`
     overflow: hidden;
+    padding-left: -100px;
 `;
 
 export const BlogCardImage = styled.img`
@@ -16,6 +17,11 @@ export const BlogCardImage = styled.img`
         height: 250px;
         border-radius: 100px;
     }
+    @media screen and (max-width: 500px){
+        width: 220px;
+        height: 220px;
+        border-radius: 120px;
+    }
 `
 
 export const BlogCardDate = styled.h5`
@@ -29,7 +35,7 @@ export const BlogCardDate = styled.h5`
 
 export const BlogCardTitle = styled.h5`
     font-size: 18px;
-    max-width: 270px;
+    max-width: 200px;
     font-weight: 600 !important;
     color: #1a3454;
 `;
