@@ -9,6 +9,11 @@ export const GlobalStyle = createGlobalStyle`
         scroll-behavior: smooth;
         font-family: 'Lato', sans-serif;
     }
+    a {
+        color: inherit;
+        text-decoration: inherit;
+        cursor: pointer;
+    }
 `;
 
 
@@ -65,7 +70,12 @@ export const Button = styled.a<{secondStyle?: boolean}>`
         cursor: pointer;
         background-color: ${props => props.secondStyle? '':'#011c31'};
 
-    }
+    };
+    @media screen and (max-width: 500px){
+        font-size: 12px;
+        padding: 8px 3px;
+        width: 120px;
+    };
 `;
 
 export const ArrowUnHovered = styled(BsArrowUpCircle)`
@@ -74,6 +84,9 @@ export const ArrowUnHovered = styled(BsArrowUpCircle)`
     right: 30px;
     font-size: 60px; 
     z-index: 40;
+    @media screen and (max-width: 950px) {
+        font-size: 40px;
+    }
 `;
 
 export const ArrowHovered = styled(BsArrowUpCircleFill)`
@@ -83,4 +96,7 @@ export const ArrowHovered = styled(BsArrowUpCircleFill)`
     font-size: 60px;
     z-index: 40;
     cursor: pointer;
+    @media screen and (max-width: 950px) {
+        font-size: 40px;
+    }
 `;

@@ -65,7 +65,7 @@ export const NavMenu: StyledComponent<'ul', any, any, any> = styled.ul<{show: bo
     width: 100%;
     @media screen and (max-width: 990px) {
         
-        margin-top: -280px;
+        margin-top: -10vh;
         flex-direction: column;
         width: 100%;
         height: 100vh;

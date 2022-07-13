@@ -38,12 +38,12 @@ const App = () => {
       <About />
       <HowToBuy/>
       <Roadmap/>
-      <Tokenomics/>
+      {/*<Tokenomics/>
       <Blog/>
       <Art/>
-      {/*<Vaults/>*/}
       <Faq/>
-      <Footer/>
+      <Footer/>*/}
+      
     </>
   );
 }

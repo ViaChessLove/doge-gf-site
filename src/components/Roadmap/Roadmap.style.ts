@@ -13,9 +13,26 @@ export const RoadmapContainer = styled(Container)`
     @media screen and (max-width: 1442px){
         max-width: 1110px;
     }
+    @media screen and (max-width: 1110px){
+        max-width: ${333+333+60}px;
+    }
+    @media screen and (max-width: 720px){
+        padding-right: 10px;
+        max-width: 330px;
+    }
+    @media screen and (max-width: 380px){
+        align-items: flex-start;
+        margin-right: 20px;
+    }
 `
 export const RoadmapBlockTitle = styled(BlockTitle)`
     margin-top: 40px;
+    @media screen and (max-width: 720px){
+        margin-top: 30px;
+    }
+    @media screen and (max-width: 380px){
+        margin-top: 20px;
+    }
     ${BlockTitle}
 `;
 
@@ -23,6 +40,7 @@ export const RoadmapCardList = styled.ul`
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
     
 `;
@@ -52,8 +70,18 @@ export const RoadmapCard = styled.li`
         &:nth-child(3){
             margin-right: 0px;
         }
-        &:last-child{
+    }
+    @media screen and (max-width: 1110px){
+        &:nth-child(3){
+            margin-right: 30px;
         }
+        &:nth-child(2n){
+            margin-right:0px;
+        }
+    }
+
+    @media screen and (max-width: 720px){
+        margin-right: 0px;
     }
 `;
 

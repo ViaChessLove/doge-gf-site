@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Container } from "../../globalStyles";
 
@@ -27,7 +28,7 @@ export const QuestionText = styled.span<{margin?: string}>`
     margin-bottom: ${(props) => props.margin!==undefined? '20px': '40px'};
 `;
 
-export const AnswerText = styled.span`
+export const AnswerText = styled(motion.span)`
     color: #343a40;
 `;
 

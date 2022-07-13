@@ -37,6 +37,9 @@ export const StartBackground = styled.img`
     border-radius: 30px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (max-width: 500px) {
+      object-fit: fill;
+    }
 `;
 
 export const StartContainer = styled(Container)`
