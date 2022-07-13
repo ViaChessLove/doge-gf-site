@@ -69,15 +69,20 @@ export const StartBlockTitle = styled(BlockTitle)`
 export const StartBlockSubTitle = styled(BlockTitle)`
   margin-top: 30px;
   color: #404046;
+  margin-bottom: 20px;
   
   @media screen and (max-width: 1024px){
     font-size: 30px;
     margin-top: 15px;
+    
+    margin-bottom: 10px;
   } 
 
   @media screen and (max-width: 768px){
     font-size: 26px;
     margin-top: 5px;
+    
+    margin-bottom: 5px;
   }
 
   ${BlockTitle}
